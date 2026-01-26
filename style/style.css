@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-primary: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --color-black: #020617;
+  --paragraph-f80: rgba(255, 255, 255, 0.8);
+  --paragraph-f10: rgba(255, 255, 255, 0.1);
+  --color-white: #fff;
+  --color-muted: #475569;
+  --color-heading: #020617;
+  --bg-gradiant: linear-gradient(117.1deg, #22C55E 35.08%, #86FFB2 105.57%);
+  --line-height-base: 1.2;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: var(--line-height-base);
+  color: var(--color-white);
+  background-color: var(--color-black);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: var(--color-white);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 { 
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+    font-weight: bold;
+    
+ }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+
+p {
+  font-size: 1rem;
+  color: var(--paragraph-f80);
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+  transition: text-decoration 6s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--paragraph-f80);
+}
+
+.container,
+.container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+section {
+  padding: 4rem 0;
+}
+
+
+.text-muted {
+  color: var(--color-muted) !important;
+}
+
+.heading-lg {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.heading-md {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.heading-sm {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+
+
+
+.primary-btn, .secendary-btn{
+    background: linear-gradient(117.1deg, #22C55E 35.08%, #86FFB2 105.57%);
+    padding: 15px 24px;
+    border-radius: 50px;
+    color: var(--color-black);
+    font-weight: bold;
+}
+.primary-btn{
+    background: linear-gradient(117.1deg, #22C55E 35.08%, #86FFB2 105.57%);
+}
+.primary-btn a{
+    color: var(--color-black);
+    text-decoration: none;
+}
+.secendary-btn{
+    background: rgba(255, 255, 255, 0.1)
+}
+.logoText{
+    font-size: 32px;
+}
+.navbar-container{
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--paragraph-f10);
+    border-radius: 50px;
+    padding: 10px 32px;
+}
+
+
+.home-page{
+    background-image: url(/assets/props-hero-bg.svg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.custom-container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+
+.hero-container{
+    /* background: red; */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 920px;
+    text-align: center;
+}
+.hero-cta p{
+    font-size: 18px;
+}
+.hero-cta-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.hero-cta-featuers{
+    padding-top: 40px;
+}
+.hero-cta-featuers a{
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--paragraph-f10);
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 11.9px;
+    padding: 8px 12px;
+    gap: 8px;
+}
+.icon-card1{
+    
+}
+
+@media (max-width: 576px) {
+    .logoText{
+        font-size: 24px;
+    }
+    h1 { 
+        font-size: 2.0rem;
+        color: var(--color-white);
+        text-align: left;
+    }
+}
