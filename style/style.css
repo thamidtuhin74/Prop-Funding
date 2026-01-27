@@ -143,7 +143,7 @@ section {
 
 
 .home-page{
-    background-image: url(/assets/props-hero-bg.svg);
+    background-image: url(../assets/props-hero-bg.svg);
     background-position: 100% 0%;
     background-repeat: no-repeat;
     background-size: contain;
